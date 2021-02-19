@@ -3,7 +3,7 @@ Python Tools mit grafischer Oberfläche für die Erfassung und Kontrolle komplex
 
 - startPyOsV2.pyw: Grafische Benutzeroberfläche
 
-- einstPyOsV2.py: Einstellungen für die pyOsV2
+- einstPyOsV2.py: Einstellungen
 
 - pyosv2.py: Funktionssammlung für die Erfassung und Kontrolle von Datei-Strukturen
 
