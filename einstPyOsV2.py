@@ -13,13 +13,13 @@ Copyright (c) Jan. 2021: Andreas Ulrich
 DC_DIRS = {
     "github": (
         "/home/andreas/github/pyOsTools",
-        "./github.json",
-        "./github.html"
+        "./Json/github.json",
+        "./Html/github.html"
     ),
     "development": (
-        "/home/andreas/Dropbox/1_Ich/2_Projekte/2020_pyOsTools",
-        "./development.json",
-        "./development.html"
+        "/home/andreas/Dropbox/1_Ich/2_Projekte/pyOsV2",
+        "./Json/development.json",
+        "./Html/development.html"
     )
 }
 # Definition der zu vergleichenden Dateistrukturen anhand von JSON
@@ -30,10 +30,10 @@ DC_DIRS = {
 # Bei Windows Pfaden mit "\" ist der Zeichenkette ein r voranzustellen:
 # r"LW:\pfad\datei.erw"
 DC_COMP = {
-    "github": (
-        "./development.json",
-        "./github.json",
-        "./diff_github.json"
+    "dev-git": (
+        "./Json/development.json",
+        "./Json/github.json",
+        "./Json/diff_github.json"
     ),
     "error": (
         "./nicht/quelle.json",

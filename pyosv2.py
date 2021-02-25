@@ -391,7 +391,7 @@ def f_checkcomp(in_log):
             'ziel': [tx_zielpfad, None, None]}
         # Jsons prüfen
         for tx_pruefid, tx_jsonpfad in dc_pruef.items():
-            tx_jsonpfad = tx_jsonpfad.lower()
+            # tx_jsonpfad = tx_jsonpfad.lower()
             if (os.path.isfile(tx_jsonpfad) and
                tx_jsonpfad.endswith(".json")):
                 # Scheint eine Json Datei zu sein, Json laden
@@ -577,7 +577,7 @@ def f_checkdirs(in_log):
             'html': [tx_htmlpfad, None, None]}
         # Jsons prüfen
         for tx_pruefid, tx_dateipfad in dc_pruef.items():
-            tx_dateipfad = tx_dateipfad.lower()
+            # tx_dateipfad = tx_dateipfad.lower()
             if (os.path.isfile(tx_dateipfad) and
                tx_dateipfad.endswith(".json")):
                 # Scheint eine JSON Datei zu sein, Json laden
@@ -628,7 +628,7 @@ def f_checkdiff(in_log):
         tx_text = "{0}".format(os.path.basename(tx_pfad))
         in_log = f_log(in_log, "Zu prüfende Datei", tx_text)
         # Jsons prüfen
-        tx_pfad = tx_pfad.lower()
+        # tx_pfad = tx_pfad.lower()
         if (os.path.isfile(tx_pfad) and
            tx_pfad.endswith(".json")):
             # Scheint eine JSON Datei zu sein, Json laden

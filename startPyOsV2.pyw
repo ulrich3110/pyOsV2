@@ -36,8 +36,8 @@ def f_filemanager(tx_pfad):
     Öffnet den Dateimanager definiert in <TXT_FILEMAN> mit dem <pfad>
     '''
     tx_pfad = os.path.normcase(os.path.normpath(tx_pfad))
-    tx_pfad = os.path.abspath(tx_pfad)
-    tx_verz = os.path.dirname(tx_pfad)
+    tx_verz = os.path.abspath(tx_pfad)
+    print(tx_verz)
     if os.path.isdir(tx_verz):
         # Pfad existiert
         tx_cmd = ""
@@ -415,7 +415,8 @@ class GuiOsTools():
             # Werte holen
             dc_v = self.m_dirs_chkvalues(self.tx_dirs_id)
             # Dateimanager öffnen
-            f_filemanager(dc_v['json_pfad'])
+            tx_verz = os.path.dirname(dc_v['json_pfad'])
+            f_filemanager(tx_verz)
 
     def m_dirs_onhtmlmake(self):
         '''
@@ -464,7 +465,8 @@ class GuiOsTools():
             # Werte holen
             dc_v = self.m_dirs_chkvalues(self.tx_dirs_id)
             # Dateimanager öffnen
-            f_filemanager(dc_v['html_pfad'])
+            tx_verz = os.path.dirname(dc_v['html_pfad'])
+            f_filemanager(tx_verz)
 
     def m_dirs_onupdate(self):
         '''
